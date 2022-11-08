@@ -1,15 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import MyButton from './MyButton';
-import JavascriptTest from './JavascriptTest';
+import Clock from './Clock';
 
 function App() {
   return (
     <div className="App">
       <div> Learn React </div><br/><hr/>
       
-      <MyButton/>
-      <JavascriptTest/>
+      <Clock city={"Tehran"}/>
+      <Clock city={"Stavanger"}/>
+      <Clock city={"NewYork"}/>
     </div>
   );
 }
