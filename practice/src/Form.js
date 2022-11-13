@@ -6,6 +6,7 @@ import Hooks from "./Hooks";
 import {SearchFilter} from './exercise/searchFiltr/SearchFilter';
 import UseRefPractice from './UseRefPractice';
 import Counter from "./exercise/counter/Counter";
+import CitiesList from "./exercise/listDisplay/CitiesList";
 
 export const userNameContext = createContext();
 
@@ -36,7 +37,10 @@ export const Form = () => {
 
         <UseRefPractice/>
         <hr/> */}
-        <Counter/>
+        {/* <Counter/>
+        <hr/> */}
+
+        <CitiesList/>
 
     </div>
   );
