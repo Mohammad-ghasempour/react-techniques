@@ -4,6 +4,8 @@ import Clock from "./Clock";
 import { LearnLifeCycles } from "./LearnLifeCycles";
 import Hooks from "./Hooks";
 import {SearchFilter} from './exercise/searchFiltr/SearchFilter';
+import UseRefPractice from './UseRefPractice';
+import Counter from "./exercise/counter/Counter";
 
 export const userNameContext = createContext();
 
@@ -27,7 +29,14 @@ export const Form = () => {
       <Hooks />
       </userNameContext.Provider>
       </div> */}
-        <SearchFilter/>
+      
+        {/* <SearchFilter/>
+
+        <hr/>
+
+        <UseRefPractice/>
+        <hr/> */}
+        <Counter/>
 
     </div>
   );
