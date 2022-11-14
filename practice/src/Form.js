@@ -7,7 +7,7 @@ import {SearchFilter} from './exercise/searchFiltr/SearchFilter';
 import UseRefPractice from './UseRefPractice';
 import Counter from "./exercise/counter/Counter";
 import CitiesList from "./exercise/listDisplay/CitiesList";
-
+import AccordionProject from "./accordion/AccordionProject";
 export const userNameContext = createContext();
 
 
@@ -40,7 +40,11 @@ export const Form = () => {
         {/* <Counter/>
         <hr/> */}
 
-        <CitiesList/>
+        {/* <CitiesList/>
+        <hr/> */}
+
+        <AccordionProject/>
+     
 
     </div>
   );

@@ -1,0 +1,43 @@
+
+.Accordion {
+    text-align: center;
+  }
+
+.Accordion-button {
+    width: 100%;
+}
+
+.Accordion-content {
+    overflow: hidden;
+    max-height: 0px;
+    }
+.Accordion-active {
+    background-color:grey;
+   }
+   
+.Accordion-icon {
+  margin-top: 10px;
+  margin-left: auto;
+  justify-content: right;
+  }
+  
+.Rotate {
+  transform: rotate(90deg);
+  }
+  
+  .App-logodddd {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  
+  .App-headerddddd {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
