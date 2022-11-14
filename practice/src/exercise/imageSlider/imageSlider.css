@@ -1,0 +1,43 @@
+
+
+.flex {
+    display: flex;
+    margin :5%
+}
+
+.iterativeButton {
+    margin-top: 20%;
+        }
+.sliderButton {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.bulletContainer {
+    margin-top: -70px;
+    }
+.sliderButton:hover {
+    background-color: rgb(134, 134, 134);
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
+
+.image {
+    height: 400px;
+    width: 700px;
+    padding: 20px;
+   }
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  .dot:hover {
+    background-color: rgb(134, 134, 134);
+    cursor: pointer;
+    transform: translateY(-2px);
+  }

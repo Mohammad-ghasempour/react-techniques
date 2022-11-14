@@ -3,16 +3,17 @@ import "./App.css";
 import Clock from "./Clock";
 import { LearnLifeCycles } from "./LearnLifeCycles";
 import Hooks from "./Hooks";
-import {SearchFilter} from './exercise/searchFiltr/SearchFilter';
-import UseRefPractice from './UseRefPractice';
+import { SearchFilter } from "./exercise/searchFiltr/SearchFilter";
+import UseRefPractice from "./UseRefPractice";
 import Counter from "./exercise/counter/Counter";
 import CitiesList from "./exercise/listDisplay/CitiesList";
-import AccordionProject from "./accordion/AccordionProject";
+import AccordionProject from "./exercise/accordion/AccordionProject";
+import ImageSlider from "./exercise/imageSlider/ImageSlider";
+
 export const userNameContext = createContext();
 
-
 export const Form = () => {
-    const [userName , setUserName] = useState('Mohammad')
+  const [userName, setUserName] = useState("Mohammad");
   return (
     <div className="App">
       {/* <div> Learn React </div>
@@ -30,22 +31,22 @@ export const Form = () => {
       <Hooks />
       </userNameContext.Provider>
       </div> */}
-      
-        {/* <SearchFilter/>
+
+      {/* <SearchFilter/>
 
         <hr/>
 
         <UseRefPractice/>
         <hr/> */}
-        {/* <Counter/>
+      {/* <Counter/>
         <hr/> */}
 
-        {/* <CitiesList/>
+      {/* <CitiesList/>
         <hr/> */}
 
-        <AccordionProject/>
-     
-
+      {/* <AccordionProject/>
+        <hr/> */}
+      <ImageSlider />
     </div>
   );
 };
