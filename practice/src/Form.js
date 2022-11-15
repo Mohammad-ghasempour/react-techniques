@@ -9,6 +9,7 @@ import Counter from "./exercise/counter/Counter";
 import CitiesList from "./exercise/listDisplay/CitiesList";
 import AccordionProject from "./exercise/accordion/AccordionProject";
 import ImageSlider from "./exercise/imageSlider/ImageSlider";
+import CheckBoxForm from "./exercise/checkBox/CheckBoxForm";
 
 export const userNameContext = createContext();
 
@@ -46,7 +47,11 @@ export const Form = () => {
 
       {/* <AccordionProject/>
         <hr/> */}
-      <ImageSlider />
+
+      {/* <ImageSlider />
+      <hr/> */}
+        <CheckBoxForm/>
+
     </div>
   );
 };

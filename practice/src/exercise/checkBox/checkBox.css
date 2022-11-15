@@ -1,0 +1,13 @@
+.flex {
+    display: flex;
+}
+
+.questions {
+    margin-left: auto; 
+    margin-right: 0;
+    float: left;
+    
+}
+.formPreviewContainer {
+    margin-left: 12%;
+}
