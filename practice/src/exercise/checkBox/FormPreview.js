@@ -1,6 +1,6 @@
-import React from "react";
+import React , {useEffect} from "react";
 
-const FormPreview = ({ user }) => {
+const FormPreview = ({ user , isAcceptable }) => {
   const {
     name,
     citizenship,
@@ -8,7 +8,13 @@ const FormPreview = ({ user }) => {
     skillWorkerPermit,
     intendToStayLongTime,
   } = user;
-
+  
+  useEffect(() => {
+       isAcceptable(isAcceptableToStayInNorway); 
+  });
+  
+  
+  const isAcceptableToStayInNorway = ((citizenship) || (livingInNorway && skillWorkerPermit)) ? true : false
   return (
     <div>
       <p>
@@ -32,7 +38,7 @@ const FormPreview = ({ user }) => {
         for a long time.{" "}
       </p>
       <br/>
-      <h3>The status will be show here...</h3>
+      <h2 style={{color: 'green'}}><b>{isAcceptableToStayInNorway ? '✓ Able to add' : ''}</b></h2>
     </div>
   );
 };

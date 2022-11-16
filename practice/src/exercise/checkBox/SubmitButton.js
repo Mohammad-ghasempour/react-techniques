@@ -1,9 +1,9 @@
 import React from 'react';
 
-const SubmitButton = () => {
+const SubmitButton = ({onSubmet}) => {
     return (
         <div>
-            <button>Add new user</button>
+            <button onClick={onSubmet}>Add new user</button>
         </div>
     );
 };

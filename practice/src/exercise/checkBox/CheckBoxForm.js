@@ -14,6 +14,33 @@ const CheckBoxForm = () => {
     skillWorkerPermit: false,
     intendToStayLongTime: false,
   });
+  const [isValidToStay, setIsValidToStay] = useState(false);
+  const [acceptedUser, setAcceptedUser] = useState([]);
+
+const addUser =()=>{
+
+  const response = window.confirm("Are you sure you want to add the Applicant ?");
+
+if (response) {
+  setAcceptedUser([...acceptedUser , userInformation])
+  setUserInformation({
+    name: "",
+    citizenship: false,
+    livingInNorway: false,
+    skillWorkerPermit: false,
+    intendToStayLongTime: false,
+  })
+
+} else {
+    // add code if the user pressed the Cancel button
+    console.log("Cancel was pressed");
+}
+
+
+  
+ 
+ // console.log(acceptedUser)
+}
 
   const changeCheckStatus = (e) => {
     switch (e.target.id) {
@@ -54,25 +81,27 @@ setUserInformation({...userInformation , name: name.target.value})
       <div className="flex">
         <div>
           <div>
-            <NameInput changeName={nameUpdater} />
+            <NameInput key={acceptedUser.length} changeName={nameUpdater} />
           </div>
           <br />
           <div>
-            <QuestionsCheckList
+            <QuestionsCheckList key={acceptedUser.length}    // key added because of restarting this component after add each person to array.
               user={userInformation}
               changeStatus={changeCheckStatus}
             />
           </div>
         </div>
         <div className="formPreviewContainer">
-          <FormPreview user={userInformation} />
+          <FormPreview user={userInformation} isAcceptable={setIsValidToStay} />
         </div>
       </div>
 
       <div>
-        <SubmitButton />
+        {isValidToStay ? <SubmitButton onSubmet={addUser} />  : ''}
 
-        <UsersListShow/>
+      </div>
+      <div>
+        <UsersListShow users={acceptedUser}/>
       </div>
     </div>
   );
