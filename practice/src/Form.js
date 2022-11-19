@@ -11,6 +11,7 @@ import AccordionProject from "./exercise/accordion/AccordionProject";
 import ImageSlider from "./exercise/imageSlider/ImageSlider";
 import CheckBoxForm from "./exercise/checkBox/CheckBoxForm";
 import JustForPractice from "./JustForPractice";
+import LoginForm from "./exercise/loginForm/LoginForm";
 
 export const userNameContext = createContext();
 
@@ -52,8 +53,10 @@ export const Form = () => {
       {/* <ImageSlider />
       <hr/> */}
 
-        <CheckBoxForm/>
-        
+        {/* <CheckBoxForm/>
+        <hr/> */}
+
+        <LoginForm/>       
 
 
 
