@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 2px 0 2px 0;
+    width: 80%;
+    height: 20px;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+input:focus {
+    background-color: rgb(252, 216, 250);
+    padding: 8px 16px;
+}

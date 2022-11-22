@@ -1,0 +1,59 @@
+
+.fullPageDiv{
+    background-color: rgb(115, 39, 134);
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+.pre{
+    color: white;
+    font-weight: 100;
+}
+
+.fullDiv {
+    width: 40%;
+    height: auto !important;
+    margin: auto;
+    margin-top: 5%;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fullDiv form {
+    width: 90%;
+    color: rgb(0, 0, 0);
+}
+
+button {
+    width: 80%;
+    height: 40px;
+    background-color: rgb(223, 165, 241);
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: rgb(198, 135, 218);
+
+}
+
+
+.error {
+    color: red;
+    margin: 0px 0 18px 0;
+    display: block;
+}
+
+.spanContainer {
+    height: 25px;
+}

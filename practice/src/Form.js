@@ -12,6 +12,8 @@ import ImageSlider from "./exercise/imageSlider/ImageSlider";
 import CheckBoxForm from "./exercise/checkBox/CheckBoxForm";
 import JustForPractice from "./JustForPractice";
 import LoginForm from "./exercise/loginForm/LoginForm";
+import FormValidationLibrary from "./exercise/formValidationLibrary/FormValidationLibrary";
+import FormValidationWithHtmlAndCss from "./exercise/formValidationWithHtmlAndCss/FormValidationWithHtmlAndCss";
 
 export const userNameContext = createContext();
 
@@ -53,16 +55,19 @@ export const Form = () => {
       {/* <ImageSlider />
       <hr/> */}
 
-        {/* <CheckBoxForm/>
+      {/* <CheckBoxForm/>
+        <hr/> */}
+      {/* 
+        <LoginForm/>      
         <hr/> */}
 
-        <LoginForm/>       
+      <FormValidationLibrary />
+      <hr />
 
 
+  
 
-        {/* <JustForPractice/> */}
-
+      {/* <JustForPractice/> */}
     </div>
   );
 };
-
