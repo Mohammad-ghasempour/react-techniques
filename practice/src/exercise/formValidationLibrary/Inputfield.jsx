@@ -3,7 +3,7 @@ import "./inputs.css";
 
 const Inputfield = (props) => {
   return (
-    <div>
+    <div className="container">
       <label>{props.title}</label>
       <input
         className="input"

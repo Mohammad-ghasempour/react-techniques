@@ -3,38 +3,42 @@
     background-color: rgb(115, 39, 134);
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0x;
+    bottom: 0px;
+    overflow-y: auto;
 
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
 }
 .pre{
     color: white;
     font-weight: 100;
 }
 
-.fullDiv {
+.formBorder{
     width: 40%;
-    height: auto !important;
+    margin: 30px 0 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* height: auto !important;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 5%; */
     text-align: left;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     padding: 25px 10px;
     display: flex;
     flex-direction: row;
+    align-items: auto;
     justify-content: center;
 }
 
-.fullDiv form {
+.formBorder form {
     width: 90%;
     color: rgb(0, 0, 0);
 }
 
-button {
+.button {
     width: 80%;
     height: 40px;
     background-color: rgb(223, 165, 241);
@@ -42,7 +46,7 @@ button {
     font-size: 18px;
 }
 
-button:hover {
+.button:hover {
     background-color: rgb(198, 135, 218);
 
 }
