@@ -61,11 +61,11 @@ export const Form = () => {
         <LoginForm/>      
         <hr/> */}
 
-      <FormValidationLibrary />
-      {/* <hr /> */}
+      {/* <FormValidationLibrary />
+      <hr /> */}
 
 
-      {/* <FormValidationWithHtmlAndCss/> */}
+      <FormValidationWithHtmlAndCss/>
 
       {/* <JustForPractice/> */}
     </div>
