@@ -14,6 +14,7 @@ import JustForPractice from "./JustForPractice";
 import LoginForm from "./exercise/loginForm/LoginForm";
 import FormValidationLibrary from "./exercise/formValidationLibrary/FormValidationLibrary";
 import FormValidationWithHtmlAndCss from "./exercise/formValidationWithHtmlAndCss/FormValidationWithHtmlAndCss";
+import QuoteApi from "./exercise/quoteApi/QuoteApi";
 
 export const userNameContext = createContext();
 
@@ -57,15 +58,19 @@ export const Form = () => {
 
       {/* <CheckBoxForm/>
         <hr/> */}
-      {/* 
+
+      {/*       
         <LoginForm/>      
         <hr/> */}
 
       {/* <FormValidationLibrary />
       <hr /> */}
 
+      {/* <FormValidationWithHtmlAndCss/>
+      <hr/>
+       */}
 
-      <FormValidationWithHtmlAndCss/>
+       <QuoteApi/>
 
       {/* <JustForPractice/> */}
     </div>
