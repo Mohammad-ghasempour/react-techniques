@@ -15,6 +15,7 @@ import LoginForm from "./exercise/loginForm/LoginForm";
 import FormValidationLibrary from "./exercise/formValidationLibrary/FormValidationLibrary";
 import FormValidationWithHtmlAndCss from "./exercise/formValidationWithHtmlAndCss/FormValidationWithHtmlAndCss";
 import QuoteApi from "./exercise/quoteApi/QuoteApi";
+import CurrencyApi from "./exercise/currencyApi/CurrencyApi";
 
 export const userNameContext = createContext();
 
@@ -70,7 +71,11 @@ export const Form = () => {
       <hr/>
        */}
 
-       <QuoteApi/>
+       {/* <QuoteApi/>
+       <hr/> */}
+
+       <CurrencyApi/>
+
 
       {/* <JustForPractice/> */}
     </div>

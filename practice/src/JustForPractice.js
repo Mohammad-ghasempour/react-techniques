@@ -3,6 +3,7 @@ import React , {useEffect , useState} from 'react';
 
 const JustForPractice = () => {
 
+
     const [state, setState] = useState(false);
     console.log('body')
     
@@ -23,3 +24,4 @@ const JustForPractice = () => {
 }
 
 export default JustForPractice;
+
