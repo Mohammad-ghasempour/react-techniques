@@ -2,6 +2,10 @@
     export const allSymbols = [
     
         {
+            "symbol": "--->",
+            "value": "Choose your Currency"
+        },
+        {
             "symbol": "AED",
             "value": "United Arab Emirates Dirham"
         },
