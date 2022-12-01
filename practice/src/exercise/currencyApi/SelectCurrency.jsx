@@ -1,14 +1,6 @@
 import React from "react";
 
 const SelectCurrency = (props) => {
-  // var dddd = [{}]
-  // Object.keys(props.symbols).map((item, index) => {
-  //     dddd.push({
-  //          symbol: item,
-  //          value: props.symbols[item]
-  //       })
-  //     })
-  //     console.log(dddd)
 
   return (
     <>

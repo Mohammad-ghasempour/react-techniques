@@ -15,7 +15,6 @@ const PanelExchange = (props) => {
       <label>From: </label> <SelectCurrency symbols={props.symbols} type="from" setCurrency={props.setCurrency} />
       <br />
       <br />
-      {/* <input type="number" placeholder="Number of amount..." onChange={onChangeAmount}/> */}
       <input type="number" placeholder="Number of amount..." onChange={props.amountNumber}/>
       <br />
       <br />

@@ -45,23 +45,30 @@ const CurrencyApi = () => {
   // },[]);
 
   const amountNumber = (e) => {
-    setGetAmount(e.target.value)
+    setGetAmount(e.target.value);
     console.log(getAmount);
   };
 
   useEffect(() => {
     if (fromCurrency && toCurrency && getAmount) {
       const fetchData = () => {
-        //  fetch(`https://api.apilayer.com/exchangerates_data/convert?to=${toCurrency}&from=${fromCurrency}&amount=${getAmount}`, requestOptions)
-        //     .then(response => response.json())
-        //     .then(result =>{
-        //        console.log(result)
-        //        setAmountResult(result.result)
-        //          } )
-        //     .catch(error => console.log('error', error));
-        console.log('Fetch is done' , 'From:',fromCurrency , 'To: ' , toCurrency , 'Amount: ' , getAmount);
+         fetch(`https://api.apilayer.com/exchangerates_data/convert?to=${toCurrency}&from=${fromCurrency}&amount=${getAmount}`, requestOptions)
+            .then(response => response.json())
+            .then(result =>{
+               console.log(result)
+               setAmountResult(result.result)
+                 } )
+            .catch(error => console.log('error', error));
+        console.log(
+          "Fetch is done",
+          "From:",
+          fromCurrency,
+          "To: ",
+          toCurrency,
+          "Amount: ",
+          getAmount
+        );
       };
-      
 
       const timer = setTimeout(() => {
         fetchData();
@@ -69,7 +76,7 @@ const CurrencyApi = () => {
 
       return () => clearTimeout(timer);
     }
-  }, [fromCurrency, toCurrency , getAmount]);
+  }, [fromCurrency, toCurrency, getAmount]);
 
   return (
     <div>

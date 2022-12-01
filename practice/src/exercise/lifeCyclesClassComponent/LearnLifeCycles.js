@@ -8,7 +8,6 @@ export class LearnLifeCycles extends React.Component {
       show: true
     }
     console.log('Constructor')
-    var div1 , div2;
   }
 
   // static getDerivedStateFromProps(props, state) {
@@ -17,13 +16,6 @@ export class LearnLifeCycles extends React.Component {
   // //return { color: props.color}
   //   }
 
-    // componentDidMount(){
-    //   console.log('componentDidMount')
-    //   setTimeout(()=>{
-    //     this.setState({color: 'yellow'});
-    //     console.log(this.state.color)
-    //   },2000)
-    // }
 
     componentDidMount(){
       setTimeout(()=>{
@@ -80,6 +72,6 @@ class Description extends React.Component{
   }
 
   render(){
-    return <h3>This is a description in this article!!!</h3>
+    return <h3>Description in this article!!!</h3>
   }
 }
