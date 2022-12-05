@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React, { useState } from "react";
 import "./App.css";
 import TimeZoneClocks from "./exercise/timeZoneClocks/TimeZoneClocks";
 import { LearnLifeCycles } from "./exercise/lifeCyclesClassComponent/LearnLifeCycles";
@@ -19,155 +19,183 @@ import LandingPage from "./LandingPage";
 
 const ProjectsList = [
   {
-    projectId:1,
-    projectName:"Time zone clocks",
-    description:"In this mini project the time for each zone has been customized",
-    content:<><BackToLanding/><TimeZoneClocks/></>
+    projectId: 1,
+    projectName: "Time zone clocks",
+    description:
+      "In this mini project the time for each zone has been customized",
+    content: (
+      <>
+        <BackToLanding />
+        <TimeZoneClocks />
+      </>
+    ),
   },
   {
-    projectId:2,
-    projectName:"Search bar",
-    description:"You can search for your subject in the list and show what you expected.",
-    content:  <><BackToLanding/><SearchFilter/></>
+    projectId: 2,
+    projectName: "Search bar",
+    description:
+      "You can search for your subject in the list and show what you expected.",
+    content: (
+      <>
+        <BackToLanding />
+        <SearchFilter />
+      </>
+    ),
   },
   {
-    projectId:3,
-    projectName:"A counter",
-    description:"Specify steps for counter and increase or decrease score number.",
-    content:  <><BackToLanding/><Counter/></>
+    projectId: 3,
+    projectName: "A counter",
+    description:
+      "Specify steps for counter and increase or decrease score number.",
+    content: (
+      <>
+        <BackToLanding />
+        <Counter />
+      </>
+    ),
   },
   {
-    projectId:4,
-    projectName:"List of cities",
-    description:"Separatign list of cities by its number of length.",
-    content:  <><BackToLanding/><CitiesList/></>
+    projectId: 4,
+    projectName: "List of cities",
+    description: "Separatign list of cities by its number of length.",
+    content: (
+      <>
+        <BackToLanding />
+        <CitiesList />
+      </>
+    ),
   },
   {
-    projectId:5,
-    projectName:"Accordion",
-    description:"An accordion to preserve text data.",
-    content:  <><BackToLanding/><AccordionProject/></>
+    projectId: 5,
+    projectName: "Accordion",
+    description: "An accordion to preserve text data.",
+    content: (
+      <>
+        <BackToLanding />
+        <AccordionProject />
+      </>
+    ),
   },
   {
-    projectId:6,
-    projectName:"Image slider",
-    description:"An image slider that navigate between ten images.",
-    content:  <><BackToLanding/><ImageSlider /></>
+    projectId: 6,
+    projectName: "Image slider",
+    description: "An image slider that navigate between ten images.",
+    content: (
+      <>
+        <BackToLanding />
+        <ImageSlider />
+      </>
+    ),
   },
   {
-    projectId:7,
-    projectName:"Residence permit validator",
-    description:"This form could validate a person regarding their living condition and provide a description about them. if the person is eligible to live in Norway, officer can add them to Database!",
-    content:  <><BackToLanding/><CheckBoxForm/></>
+    projectId: 7,
+    projectName: "Residence permit validator",
+    description:
+      "This form could validate a person regarding their living condition and provide a description about them. if the person is eligible to live in Norway, officer can add them to Database!",
+    content: (
+      <>
+        <BackToLanding />
+        <CheckBoxForm />
+      </>
+    ),
   },
   {
-    projectId:8,
-    projectName:"login register form",
-    description:"An image slider that navigate between ten images.",
-    content:  <><BackToLanding/><LoginForm/></>
+    projectId: 8,
+    projectName: "login register form",
+    description: "An image slider that navigate between ten images.",
+    content: (
+      <>
+        <BackToLanding />
+        <LoginForm />
+      </>
+    ),
   },
   {
-    projectId:9,
-    projectName:"Form validation library",
-    description:"This form validation build with React-Hook-Form.",
-    content:  <><BackToLanding/><FormValidationLibrary /></>
+    projectId: 9,
+    projectName: "Form validation library",
+    description: "This form validation build with React-Hook-Form.",
+    content: (
+      <>
+        <BackToLanding />
+        <FormValidationLibrary />
+      </>
+    ),
   },
   {
-    projectId:10,
-    projectName:"Form validation",
-    description:"A form validation which build with HTML , CSS and Javascript. No library and any complexity javascript functions!",
-    content:  <><BackToLanding/><FormValidationWithHtmlAndCss/></>
-  }
-  ,
-  {
-    projectId:11,
-    projectName:"Random Quotes",
-    description:"An application to give us many quotes which you can specify how long length of quote would you like to get.",
-    content:  <><BackToLanding/><QuoteApi/></>
+    projectId: 10,
+    projectName: "Form validation",
+    description:
+      "A form validation which build with HTML , CSS and Javascript. No library and any complexity javascript functions!",
+    content: (
+      <>
+        <BackToLanding />
+        <FormValidationWithHtmlAndCss />
+      </>
+    ),
   },
   {
-    projectId:12,
-    projectName:"Currency convertor",
-    description:"You can covert currencies from all over the world in this application. the point is that this app just accept a limit request per month!",
-    content:  <><BackToLanding/><CurrencyApi/></>
+    projectId: 11,
+    projectName: "Random Quotes",
+    description:
+      "An application to give us many quotes which you can specify how long length of quote would you like to get.",
+    content: (
+      <>
+        <BackToLanding />
+        <QuoteApi />
+      </>
+    ),
   },
   {
-    projectId:13,
-    projectName:"How to use useRef hook",
-    description:"This mini project show us how to use useRef hook to keep the previous state.",
-    content:  <><BackToLanding/><UseRefPractice/></>
-  }
-  ,
+    projectId: 12,
+    projectName: "Currency convertor",
+    description:
+      "You can covert currencies from all over the world in this application. the point is that this app just accept a limit request per month!",
+    content: (
+      <>
+        <BackToLanding />
+        <CurrencyApi />
+      </>
+    ),
+  },
   {
-    projectId:14,
-    projectName:"React class component life sycles",
-    description:"we used all lifecycle methods that can use in a class component.",
-    content:  <><BackToLanding/><LearnLifeCycles color={"Red"} /></>
-  }
-]
+    projectId: 13,
+    projectName: "How to use useRef hook",
+    description:
+      "This mini project show us how to use useRef hook to keep the previous state.",
+    content: (
+      <>
+        <BackToLanding />
+        <UseRefPractice />
+      </>
+    ),
+  },
+  {
+    projectId: 14,
+    projectName: "React class component life sycles",
+    description:
+      "we used all lifecycle methods that can use in a class component.",
+    content: (
+      <>
+        <BackToLanding />
+        <LearnLifeCycles color={"Red"} />
+      </>
+    ),
+  },
+];
 export const Form = () => {
-
- 
   const [currentPageShow, setCurrentPageShow] = useState();
 
-  const showProject= (e)=>{
-    setCurrentPageShow(ProjectsList.find((item)=>item.projectId == e.target.id).content);
-  }
+  const showProject = (e) => {
+    setCurrentPageShow(
+      ProjectsList.find((item) => item.projectId == e.target.id).content
+    );
+  };
 
-  const landing = <LandingPage ProjectsList={ProjectsList} showProject={showProject}/>
+  const landing = (
+    <LandingPage ProjectsList={ProjectsList} showProject={showProject} />
+  );
 
   return (
-    <div className="App">
-
-{/* <LandingPage ProjectsList={ProjectsList} showProject={showProject}/> */}
-{!currentPageShow ? landing : currentPageShow}
-    
-      {/* <TimeZoneClocks/>
-       <hr/> */}
-
-      {/* <LearnLifeCycles color={"Red"} />
-       <hr/> */}
-
-      {/* <SearchFilter/>
-        <hr/> */}
-
-        {/* <UseRefPractice/>
-        <hr/> */}
-
-      {/* <Counter/>
-        <hr/> */}
-
-      {/* <CitiesList/>
-        <hr/> */}
-
-      {/* <AccordionProject/>
-        <hr/> */}
-
-      {/*
-      <ImageSlider />
-      <hr/> */}
-
-      {/* <CheckBoxForm/>
-        <hr/> */}
-
-      {/*       
-        <LoginForm/>      
-        <hr/> */}
-
-      {/* <FormValidationLibrary />
-      <hr /> */}
-
-{/* <FormValidationWithHtmlAndCss/>
-      <hr/> */}
-      
-
-      {/* <QuoteApi/>
-       <hr/> */}
-
-      {/* <CurrencyApi/>
-       <hr/> */}
-
-   
-    </div>
+    <div className="App">{!currentPageShow ? landing : currentPageShow}</div>
   );
 };
